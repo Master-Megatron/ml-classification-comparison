@@ -113,36 +113,8 @@ def make_data(n=1000, p=0.5, mu_0=0, mu_1=2, sigma_0=1, sigma_1=1):
 - **Delta Range**: [0, 3] with 25 equally-spaced values
 - **Key Observation**: Both methods show identical learning curves
 
-## 🎓 Educational Insights
-
-### Why Do They Perform Similarly?
-
-1. **Simple 1D Problem**: With only one predictor, the decision boundary is simple
-2. **Linear Separability**: Classes differ mainly in their means, making a linear boundary effective
-3. **Balanced Classes**: Equal prior probabilities (p = 0.5) reduce bias issues
-4. **Well-Specified Model**: The data-generating process aligns with model assumptions
-
-### When Would They Differ?
-
-- **Non-linear boundaries**: Logistic regression handles non-linearity better
-- **Extreme probabilities**: Logistic regression naturally bounds predictions to [0,1]
-- **Imbalanced data**: Logistic regression better handles class imbalance
-- **Multiple predictors**: Differences emerge with complex feature interactions
 
 
-
-## 📝 Notes
-
-### Key Takeaways:
-- For simple binary classification problems, linear and logistic regression often perform similarly
-- Class separation (effect size) is the primary driver of model accuracy
-- Both methods benefit equally from increased class separation
-- The choice between methods should be based on interpretability and theoretical considerations rather than raw accuracy for simple problems
-
-### Practical Implications:
-- Always compare multiple models empirically
-- Effect size matters more than model complexity for simple problems
-- Consider computational efficiency when performance is equivalent
 
 
 
